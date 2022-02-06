@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css">
     <title>Sinkovics Gábor webfejlesztő</title>
   </head>
   <body>
-    <header>
+    <header class="kozepre">
       <h1>Sinkovics Gábor webfejlesztő</h1>
+      <img
+          src="./images/sinkovics_gabor.jpg"
+          alt="Sinkovics Gábor profilképe"
+          id="profilkep"
+        />
+                  <!-- to do: később inkább CSS-ben beállítani a képet! -->
       <nav id="menu">
         <ul>
           <li><a href="./index.html" target="_blank">Kezdőlap</a></li>
@@ -19,16 +26,10 @@
         </ul>
       </nav>
     </header>
-    <main>
-        <img
-          src="./images/sinkovics_gabor.jpg"
-          alt="Sinkovics Gábor profilképe"
-          width="300"
-        />
-                  <!-- to do: később inkább CSS-ben beállítani a képet! -->
+    <main class="kozepre">
         <section id="szemelyes_adatok">
             <h2>Személyes adatok</h2>
-            <table>
+            <table class="behuzas">
               <tr>
                 <td>Teljes név:</td>
                 <td>Sinkovics Gábor András</td>
@@ -62,36 +63,32 @@
         <ul></ul>
       </section>
       <section id="kapcsolat">
-          <h2>Kapcsolat</h2>
+        <h2>Kapcsolat</h2>
           <form method="post" action="https://formspree.io/f/xwkyvlpj">
-            <fieldset>
-            <label for="vezeteknev">Vezetéknév: </label>
-            <input type="text" id="vezeteknev" name="vezeteknev" placeholder="Kovács" required>
-            <br>
-            <label for="keresztnev">Keresztnév: </label>
-            <input type="text" id="keresztnev" name="keresztnev" placeholder="Béla" required>
-            <br>
-            <label for="telefonszam">Telefonszám: </label>
-            <input type="tel" id="telefonszam" name="telefonszam" pattern="[0-9]{4}/[0-9]{3}-[0-9]{4}" placeholder="0670/504-0521" required>
-            <br>
-            <label for="email">E-mail cím: </label>
-            <input type="email" id="email" name="email" placeholder="kovacs.bela@gmail.com" required>
-            <br>
-            <textarea name="uzenet" id="uzenet" cols="40" rows="10" placeholder="Ide gépeld az üzenetet..."></textarea>
-            <br>
-            <input type="radio" id="valasz_emailben" name="valasz" value="emailben">
-            <label for="valasz_emailben">A választ e-mailben kérem</label>
-            <br>
-            <input type="radio" id="valasz_telefonon" name="valasz" value="telefonon">
-            <label for="valasz_telefonon">A választ telefonon kérem</label>
-            <br>
-            <button type="submit">Beküldés</button>
+            <fieldset class="behuzas">
+              <label for="vezeteknev">Vezetéknév: </label>
+              <input type="text" id="vezeteknev" name="vezeteknev" placeholder="Kovács" required>
+              <label for="keresztnev">Keresztnév: </label>
+              <input type="text" id="keresztnev" name="keresztnev" placeholder="Béla" required>
+              <label for="telefonszam">Telefonszám: </label>
+              <input type="tel" id="telefonszam" name="telefonszam" pattern="[0-9]{4}/[0-9]{3}-[0-9]{4}" placeholder="0670/504-0521" required>
+              <label for="email">E-mail cím: </label>
+              <input type="email" id="email" name="email" placeholder="kovacs.bela@gmail.com" required>
+              <textarea name="uzenet" id="uzenet" cols="40" rows="10" placeholder="Ide gépeld az üzenetet..."></textarea>
+              <div>
+              <input type="radio" id="valasz_emailben" class="dinline" name="valasz" value="emailben">
+              <label for="valasz_emailben" class="dinline">A választ e-mailben kérem</label>
+              </div>
+              <div>
+              <input type="radio" id="valasz_telefonon" class="dinline" name="valasz" value="telefonon">
+              <label for="valasz_telefonon" class="dinline">A választ telefonon kérem</label>
+              </div>
+              <button type="submit">Beküldés</button>
             </fieldset>
-                        <!-- Majd a <br> tag-ek kerüljenek ki a történetből!-->
           </form>
-        </section>
+      </section>
     </main>
-    <footer>
+    <footer class="kozepre">
       <nav id="social_links">
         <ul>
           <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>

@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sinkovics Gábor brácsaművész</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <header>
-      <h1>Sinkovics Gábor brácsaművész</h1>
-      <nav>
-        <ul>
+    <header class="kozepre">
+      <h1 class="kozepre">Sinkovics Gábor brácsaművész</h1>
+      <img
+        src="./images/sinkovics_gabor_bracsamuvesz.png"
+        alt="Sinkovics_Gábor_profilképe"/>
+        <nav>
+        <ul class="menu_bracsa">
           <li><a href="./index.html">Kezdőlap</a></li>
           <li><a href="#szemelyes_adatok">Személyes adatok</a></li>
           <li><a href="#kapcsolat">Kapcsolat</a></li>
@@ -21,13 +25,10 @@
         </ul>
         </nav>
     </header>
-    <main>
-      <img
-        src="./images/sinkovics_gabor_bracsamuvesz.png"
-        alt="Sinkovics_Gábor_profilképe"/>
+    <main class="kozepre">
       <section id="szemelyes_adatok">
         <h2>Személyes adatok</h2>
-        <table>
+        <table class="behuzas">
           <tr>
             <td>Teljes név:</td>
             <td>Sinkovics Gábor András</td>
@@ -52,7 +53,7 @@
       </section>
       <section id="tapasztalat">
         <h2>Tapasztalat</h2>
-        <table>
+        <table class="behuzas">
           <tr>
             <td>2020-</td>
             <td><a href="http://gyfz.hu" target="_blank">Győri Filharmonikus Zenekar</a></td>
@@ -71,7 +72,7 @@
       </section>
       <section id="tanulmanyok">
         <h2>Tanulmányok</h2>
-        <table>
+        <table class="behuzas">
           <tr>
             <td>2019-2020</td>
             <td>
@@ -90,7 +91,7 @@
       </section>
       <section id="versenyeredmenyek">
         <h2>Versenyeredmények</h2>
-        <table>
+        <table class="behuzas">
           <tr>
             <td>2014</td>
             <td>Országos Lukács Pál Brácsaverseny, Budapest</td>
@@ -133,34 +134,30 @@
       <section id="kapcsolat">
         <h2>Kapcsolat</h2>
           <form method="post" action="https://formspree.io/f/xwkyvlpj">
-            <fieldset>
+            <fieldset class="behuzas">
               <label for="vezeteknev">Vezetéknév: </label>
               <input type="text" id="vezeteknev" name="vezeteknev" placeholder="Kovács" required>
-              <br>
               <label for="keresztnev">Keresztnév: </label>
               <input type="text" id="keresztnev" name="keresztnev" placeholder="Béla" required>
-              <br>
               <label for="telefonszam">Telefonszám: </label>
               <input type="tel" id="telefonszam" name="telefonszam" pattern="[0-9]{4}/[0-9]{3}-[0-9]{4}" placeholder="0670/504-0521" required>
-              <br>
               <label for="email">E-mail cím: </label>
               <input type="email" id="email" name="email" placeholder="kovacs.bela@gmail.com" required>
-              <br>
               <textarea name="uzenet" id="uzenet" cols="40" rows="10" placeholder="Ide gépeld az üzenetet..."></textarea>
-              <br>
-              <input type="radio" id="valasz_emailben" name="valasz" value="emailben">
-              <label for="valasz_emailben">A választ e-mailben kérem</label>
-              <br>
-              <input type="radio" id="valasz_telefonon" name="valasz" value="telefonon">
-              <label for="valasz_telefonon">A választ telefonon kérem</label>
-              <br>
+              <div>
+              <input type="radio" id="valasz_emailben" class="dinline" name="valasz" value="emailben">
+              <label for="valasz_emailben" class="dinline">A választ e-mailben kérem</label>
+              </div>
+              <div>
+              <input type="radio" id="valasz_telefonon" class="dinline" name="valasz" value="telefonon">
+              <label for="valasz_telefonon" class="dinline">A választ telefonon kérem</label>
+              </div>
               <button type="submit">Beküldés</button>
             </fieldset>
-            <!-- Majd a <br> tag-ek kerüljenek ki a történetből!-->
           </form>
       </section>
     </main>
-    <footer>
+    <footer class="kozepre">
       <nav id="social_links">
         <ul>
           <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>

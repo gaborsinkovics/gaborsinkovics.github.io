@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinkovics Gábor weboldala</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div class="dflex">
     <header>
         <h1>Köszöntelek a weboldalamon</h1>
     </header>
+    </div>
     <main>
-        <img src="./images/sinkovics_gabor.jpg" width="300" alt="Sinkovics_Gábor_profilképe">
-                  <!-- to do: később inkább CSS-ben beállítani a képet! -->
-
+        <div class="dflex">
+        <img src="./images/sinkovics_gabor.jpg" alt="Sinkovics_Gábor_profilképe">
         <section id="rolam">
             <h2>Rólam</h2>
             <p>
@@ -25,11 +27,12 @@
                 előbbiben, hiszen hosszútávon ebben látok perspektívát.
               </p>
         </section>
+        </div>
     </main>
     <footer>
-        <nav>
-            <a href="./webfejleszto.html">Webfejlesző oldalam</a>
-            <a href="./bracsamuvesz.html">Brácsaművész oldalam</a>
+        <nav class="dflex gombok">
+            <div><a href="./webfejleszto.html">Webfejlesző oldalam</a></div>
+            <div><a href="./bracsamuvesz.html">Brácsaművész oldalam</a></div>
         </nav>
     </footer>
 </body>

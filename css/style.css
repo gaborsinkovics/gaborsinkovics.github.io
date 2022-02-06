@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #c0e1fa;
+    color: #403037;
+    max-height: 100vw;
+    width: 70%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #403037;
+}
+
+td {
+    padding-right: 2vw;
+}
+
+.dflex {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 60vw;
+    min-width: 320px;
+}
+
+.dflex h1 {
+    min-width: max-content;
+}
+
+.dinline {
+    display: inline;
+}
+
+.kozepre {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+
+.behuzas {
+    margin-left: 3vw;
+}
+
+section#rolam {
+    padding: 20px;
+    background-color: rgba(240,230,223,0.7);
+    box-shadow: 5px 5px 5px #403037;
+}
+
+section#rolam h2{
+    margin: 0;
+} 
+
+img {
+    display: block;
+    width: 20rem;
+    margin: 2vw auto;
+    padding: auto;
+    box-shadow: 5px 5px 5px #403037;
+    border-radius: 5px;
+}
+
+.gombok {
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+}
+
+.gombok div{
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 3vw;
+}
+
+.gombok div a {
+    background-color: rgba(240,230,223,0.7);
+    color: #403037;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 5px #403037;
+    border-radius: 5px;
+    border: 1vw solid rgba(240,230,223,0.7);
+}
+
+nav li, section li {
+    list-style-type: none;
+}
+
+audio {
+    background-color: #403037;
+    box-shadow: 5px 5px 5px #403037;
+    margin: 1vw auto;
+}
+
+.menu_bracsa {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu_bracsa a {
+    display: block;
+    margin-left: 0;
+    padding: 5px;
+}
+
+a:hover{
+    background-color: #403037;
+    color: #c0e1fa;
+    border-radius: 5px;
+}
+
+#kapcsolat {
+    width: 35%;
+}
+
+form * {
+    display: block;
+    max-width: 400px;
+}
+
+form fieldset, input, textarea {
+    border: 1px solid #403037;
+    border-radius: 5px;
+    margin-bottom: 0.5vw;
+}
+
+form div {
+    width: 300px;
+}
+
+form button {
+    margin: 0.2vw auto;
+}
+
+
+
+
+
+
