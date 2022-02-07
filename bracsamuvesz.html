@@ -7,14 +7,14 @@
     <title>Sinkovics Gábor brácsaművész</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body>
-    <header class="kozepre">
-      <h1 class="kozepre">Sinkovics Gábor brácsaművész</h1>
+  <body class="dflex">
+    <header class="dflex">
+      <h1>Sinkovics Gábor brácsaművész</h1>
       <img
         src="./images/sinkovics_gabor_bracsamuvesz.png"
         alt="Sinkovics_Gábor_profilképe"/>
         <nav>
-        <ul class="menu_bracsa">
+        <ul class="menu kozepre">
           <li><a href="./index.html">Kezdőlap</a></li>
           <li><a href="#szemelyes_adatok">Személyes adatok</a></li>
           <li><a href="#kapcsolat">Kapcsolat</a></li>
@@ -25,7 +25,8 @@
         </ul>
         </nav>
     </header>
-    <main class="kozepre">
+    <main class="dflex kozepre">
+      <div id="tartalom">
       <section id="szemelyes_adatok">
         <h2>Személyes adatok</h2>
         <table class="behuzas">
@@ -135,6 +136,7 @@
         <h2>Kapcsolat</h2>
           <form method="post" action="https://formspree.io/f/xwkyvlpj">
             <fieldset class="behuzas">
+              <div>
               <label for="vezeteknev">Vezetéknév: </label>
               <input type="text" id="vezeteknev" name="vezeteknev" placeholder="Kovács" required>
               <label for="keresztnev">Keresztnév: </label>
@@ -143,6 +145,7 @@
               <input type="tel" id="telefonszam" name="telefonszam" pattern="[0-9]{4}/[0-9]{3}-[0-9]{4}" placeholder="0670/504-0521" required>
               <label for="email">E-mail cím: </label>
               <input type="email" id="email" name="email" placeholder="kovacs.bela@gmail.com" required>
+              </div>
               <textarea name="uzenet" id="uzenet" cols="40" rows="10" placeholder="Ide gépeld az üzenetet..."></textarea>
               <div>
               <input type="radio" id="valasz_emailben" class="dinline" name="valasz" value="emailben">
@@ -156,9 +159,10 @@
             </fieldset>
           </form>
       </section>
+    </div>
     </main>
-    <footer class="kozepre">
-      <nav id="social_links">
+    <footer class="dflex">
+      <nav>
         <ul>
           <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
           <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>

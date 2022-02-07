@@ -8,6 +8,7 @@ html {
     max-height: 100vw;
     width: 70%;
     margin: auto;
+    border-radius: 5px;
 }
 
 a {
@@ -26,11 +27,12 @@ td {
     justify-content: center;
     align-items: center;
     max-width: 60vw;
-    min-width: 320px;
+    min-width: min-content;
+    flex-wrap: wrap;
 }
 
 .dflex h1 {
-    min-width: max-content;
+    text-align: center;
 }
 
 .dinline {
@@ -63,11 +65,10 @@ img {
     margin: 2vw auto;
     padding: auto;
     box-shadow: 5px 5px 5px #403037;
-    border-radius: 5px;
 }
 
 .gombok {
-    margin-top: 2vw;
+    margin-top: 3vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -80,7 +81,7 @@ img {
     flex-shrink: 0;
     margin: auto;
     text-align: center;
-    margin-bottom: 3vw;
+    margin-bottom: 4vw;
 }
 
 .gombok div a {
@@ -88,8 +89,15 @@ img {
     color: #403037;
     font-size: 1.5rem;
     box-shadow: 5px 5px 5px #403037;
-    border-radius: 5px;
     border: 1vw solid rgba(240,230,223,0.7);
+}
+
+.gombok div a:hover {
+    padding: 5px;
+}
+
+table tr, td {
+    padding: 5px;
 }
 
 nav li, section li {
@@ -102,13 +110,19 @@ audio {
     margin: 1vw auto;
 }
 
-.menu_bracsa {
+
+.menu {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-left: 0;
 }
 
-.menu_bracsa a {
+.menu a {
     display: block;
+    flex-shrink: 0;
+    align-content: center;
     margin-left: 0;
     padding: 5px;
 }
@@ -116,8 +130,8 @@ audio {
 a:hover{
     background-color: #403037;
     color: #c0e1fa;
-    border-radius: 5px;
 }
+
 
 #kapcsolat {
     width: 35%;
@@ -125,17 +139,21 @@ a:hover{
 
 form * {
     display: block;
-    max-width: 400px;
+    width: max-content;
 }
 
 form fieldset, input, textarea {
     border: 1px solid #403037;
-    border-radius: 5px;
-    margin-bottom: 0.5vw;
+    margin-bottom: 1.5vw;
 }
+
 
 form div {
     width: 300px;
+}
+
+form div:first-of-type input{
+    width: 307.35px;
 }
 
 form button {
@@ -143,7 +161,13 @@ form button {
 }
 
 
+footer ul {
+    padding-left: 0;
+}
 
+footer p {
+    text-align: center;
+}
 
 
 
