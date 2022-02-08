@@ -8,96 +8,104 @@
     <title>Sinkovics Gábor webfejlesztő</title>
   </head>
   <body>
-    <header class="dflex">
-      <h1>Sinkovics Gábor webfejlesztő</h1>
-      <img
-          src="./images/sinkovics_gabor.jpg"
-          alt="Sinkovics Gábor profilképe"
-          id="profilkep"
-        />
-                  <!-- to do: később inkább CSS-ben beállítani a képet! -->
-      <nav>
-        <ul class="menu kozepre">
-          <li><a href="./index.html" target="_blank">Kezdőlap</a></li>
-          <li><a href="#szemelyes_adatok">Személyes adatok</a></li>
-          <li><a href="#tanulmanyok">Tanulmányok</a></li>
-          <li><a href="#projektek">Projektek</a></li>
-          <li><a href="#kapcsolat">Kapcsolat</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="kozepre">
-        <section id="szemelyes_adatok">
-            <h2>Személyes adatok</h2>
-            <table class="behuzas">
-              <tr>
-                <td>Teljes név:</td>
-                <td>Sinkovics Gábor András</td>
-              </tr>
-              <tr>
-                <td>Születési hely, idő:</td>
-                <td>Budapest, 1994.10.03.</td>
-              </tr>
-              <tr>
-                <td>
-                <a href="#kapcsolat">
-                  Kapcsolat:
-                </a>
-              </td>
-                <td>
-                  <a href="#kapcsolat"
-                    >gabor.sinkovics@gmail.com</a
-                  >
-                </td>
-              </tr>
-            </table>
+    <div class="tarolo">
+      <div class="elem elem-header">
+        <header>
+          <h1>Sinkovics Gábor webfejlesztő</h1>
+          <img
+              src="./images/sinkovics_gabor.jpg"
+              alt="Sinkovics Gábor profilképe"
+              id="profilkep"
+            />
+                      <!-- to do: később inkább CSS-ben beállítani a képet! -->
+          <nav>
+            <ul class="menu">
+              <li><a href="./index.html" target="_blank">Kezdőlap</a></li>
+              <li><a href="#szemelyes_adatok">Személyes adatok</a></li>
+              <li><a href="#tanulmanyok">Tanulmányok</a></li>
+              <li><a href="#projektek">Projektek</a></li>
+              <li><a href="#kapcsolat">Kapcsolat</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <div class="elem elem-main">
+        <main>
+            <section id="szemelyes_adatok">
+                <h2>Személyes adatok</h2>
+                <table class="behuzas">
+                  <tr>
+                    <td>Teljes név:</td>
+                    <td>Sinkovics Gábor András</td>
+                  </tr>
+                  <tr>
+                    <td>Születési hely, idő:</td>
+                    <td>Budapest, 1994.10.03.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                    <a href="#kapcsolat">
+                      Kapcsolat:
+                    </a>
+                  </td>
+                    <td>
+                      <a href="#kapcsolat"
+                        >gabor.sinkovics@gmail.com</a
+                      >
+                    </td>
+                  </tr>
+                </table>
+              </section>
+          <section id="tanulmanyok">
+            <h2>Tanulmányok</h2>
+            <ul>
+              <li class="behuzas">2021 november óta tanulok webfejlesztést</li>
+            </ul>
           </section>
-      <section id="tanulmanyok">
-        <h2>Tanulmányok</h2>
-        <ul>
-          <li>2021 november óta tanulok webfejlesztést</li>
-        </ul>
-      </section>
-      <section id="projektek">
-        <h2>Projektek</h2>
-        <ul></ul>
-      </section>
-      <section id="kapcsolat">
-        <h2>Kapcsolat</h2>
-          <form method="post" action="https://formspree.io/f/xwkyvlpj">
-            <fieldset class="behuzas">
-              <div>
-              <label for="vezeteknev">Vezetéknév: </label>
-              <input type="text" id="vezeteknev" name="vezeteknev" placeholder="Kovács" required>
-              <label for="keresztnev">Keresztnév: </label>
-              <input type="text" id="keresztnev" name="keresztnev" placeholder="Béla" required>
-              <label for="telefonszam">Telefonszám: </label>
-              <input type="tel" id="telefonszam" name="telefonszam" pattern="[0-9]{4}/[0-9]{3}-[0-9]{4}" placeholder="0670/504-0521" required>
-              <label for="email">E-mail cím: </label>
-              <input type="email" id="email" name="email" placeholder="kovacs.bela@gmail.com" required>
-              </div>
-              <textarea name="uzenet" id="uzenet" cols="40" rows="10" placeholder="Ide gépeld az üzenetet..."></textarea>
-              <div>
-              <input type="radio" id="valasz_emailben" class="dinline" name="valasz" value="emailben">
-              <label for="valasz_emailben" class="dinline">A választ e-mailben kérem</label>
-              </div>
-              <div>
-              <input type="radio" id="valasz_telefonon" class="dinline" name="valasz" value="telefonon">
-              <label for="valasz_telefonon" class="dinline">A választ telefonon kérem</label>
-              </div>
-              <button type="submit">Beküldés</button>
-            </fieldset>
-          </form>
-      </section>
-    </main>
-    <footer class="dflex">
-      <nav>
-        <ul>
-          <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-          <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
-        </ul>
-      </nav>
-      <p>Copyright &copy; Sinkovics Gábor 2022</p>
-    </footer>
+          <section id="projektek">
+            <h2>Projektek</h2>
+            <ul></ul>
+          </section>
+          <section id="kapcsolat">
+            <h2>Kapcsolat</h2>
+              <form method="post" action="https://formspree.io/f/xwkyvlpj">
+                <fieldset class="behuzas">
+                  <div>
+                    <label for="vezeteknev">Vezetéknév: </label>
+                    <input type="text" id="vezeteknev" name="vezeteknev" placeholder="Kovács" required>
+                    <label for="keresztnev">Keresztnév: </label>
+                    <input type="text" id="keresztnev" name="keresztnev" placeholder="Béla" required>
+                    <label for="telefonszam">Telefonszám: </label>
+                    <input type="tel" id="telefonszam" name="telefonszam" pattern="[0-9]{4}/[0-9]{3}-[0-9]{4}" placeholder="0670/504-0521" required>
+                    <label for="email">E-mail cím: </label>
+                    <input type="email" id="email" name="email" placeholder="kovacs.bela@gmail.com" required>
+                    <textarea name="uzenet" id="uzenet" cols="40" rows="10" placeholder="Ide gépeld az üzenetet..."></textarea>
+                  </div>
+                  <div>
+                    <input type="radio" id="valasz_emailben" class="dinline" name="valasz" value="emailben">
+                    <label for="valasz_emailben" class="dinline">A választ e-mailben kérem</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="valasz_telefonon" class="dinline" name="valasz" value="telefonon">
+                    <label for="valasz_telefonon" class="dinline">A választ telefonon kérem</label>
+                  </div>
+                  <button type="submit">Beküldés</button>
+                </fieldset>
+              </form>
+          </section>
+        </main>
+      </div>
+      <div class="elem elem-footer">
+        <footer>
+          <nav>
+            <ul>
+              <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+              <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+            </ul>
+          </nav>
+          <p>Copyright &copy; Sinkovics Gábor 2022</p>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
