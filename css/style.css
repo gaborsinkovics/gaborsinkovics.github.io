@@ -25,7 +25,7 @@ td {
 
 h2 {
     margin-top: 2.5vw;
-    margin-bottom: 1vw;
+    margin-bottom: 2vw;
 }
 
 h3 {
@@ -35,7 +35,6 @@ h3 {
 div.tarolo {
     display: flex;
     flex-flow: column wrap;
-    width: 100%;
 }
 
 .elem {
@@ -176,6 +175,3 @@ footer ul {
 footer p {
     text-align: center;
 }
-
-
-
