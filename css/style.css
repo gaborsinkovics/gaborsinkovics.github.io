@@ -94,14 +94,14 @@ div.fejlec {
 .flex-gombok div a {
     background-color: rgba(240,230,223,0.7);
     box-shadow: 5px 5px 5px #403037;
-    border: 1vw solid rgba(240,230,223,0.7);
+    padding: 1vw;
 }
 
 .flex-gombok div a:hover {
     background-color: rgba(240,230,223,1);
     box-shadow: none;
-    border: 1vw solid rgba(240,230,223,1);
     outline: 1px solid rgb(112, 40, 9);
+    outline-style: round;
 }
 
 /* Menü */
@@ -194,6 +194,7 @@ header nav {
     box-shadow: 5px 5px 5px #403037;
     padding-top: 120px;
     outline: 5px solid rgb(59, 66, 71);
+    outline-style: round;
 }
 
 audio {
@@ -201,7 +202,7 @@ audio {
     min-width: 310px;
     position: relative;
     top: 5px;
-    border-radius: 0;
+    border-radius: 0 0 5px 5px;
 }
 
 .flex-media-tarolo {
@@ -244,17 +245,17 @@ form div:first-of-type input, textarea{
 .urlap-gomb {
     margin: 1vw auto;
     padding: 1vw;
+    background-color: rgba(240,230,223,1);
     box-shadow: 5px 5px 5px #403037;
     border: 0;
 }
 
 .urlap-gomb:hover {
     cursor: pointer;
-    background-color: rgba(240,230,223,1);
     color: rgb(112, 40, 9);
     box-shadow: none;
     outline: 1px solid rgb(112, 40, 9);
-    border: 0;
+    outline-style: round;
 }
 
 form div.valasz_emailben, .valasz_telefonon {
