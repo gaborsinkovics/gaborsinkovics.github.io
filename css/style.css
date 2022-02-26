@@ -12,7 +12,7 @@ html {
 }
 
 main {
-    padding: 2px;
+    padding: 4px;
 }
 
 .d_inline {
@@ -193,16 +193,15 @@ header nav {
     min-width: 310px;
     box-shadow: 5px 5px 5px #403037;
     padding-top: 120px;
-    outline: 5px solid rgb(59, 66, 71);
-    outline-style: round;
+    border: 5px solid #f0f3f4;
 }
 
 audio {
-    background-color: #c0e1fa;
+    background-color: #f0f3f4;
     min-width: 310px;
     position: relative;
     top: 5px;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0;
 }
 
 .flex-media-tarolo {
@@ -243,11 +242,13 @@ form div:first-of-type input, textarea{
 }
 
 .urlap-gomb {
-    margin: 1vw auto;
+    margin: 1vh auto 4vh;
     padding: 1vw;
     background-color: rgba(240,230,223,1);
     box-shadow: 5px 5px 5px #403037;
     border: 0;
+    font-size: 1.5rem;
+    min-height: 50px;
 }
 
 .urlap-gomb:hover {
@@ -272,6 +273,12 @@ form div.valasz_emailben, .valasz_telefonon {
     height: 50px;
     text-decoration: none;
     line-height: 30px;
+  }
+
+  .fa:hover {
+    background-color: rgba(240,230,223,1);
+    outline: 1px solid rgb(112, 40, 9);
+    outline-style: round;
   }
 
   div.footer-social-media-elem {
