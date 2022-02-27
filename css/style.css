@@ -101,7 +101,6 @@ div.fejlec {
     background-color: rgba(240,230,223,1);
     box-shadow: none;
     outline: 1px solid rgb(112, 40, 9);
-    outline-style: round;
 }
 
 /* Menü */
@@ -256,7 +255,6 @@ form div:first-of-type input, textarea{
     color: rgb(112, 40, 9);
     box-shadow: none;
     outline: 1px solid rgb(112, 40, 9);
-    outline-style: round;
 }
 
 form div.valasz_emailben, .valasz_telefonon {
@@ -278,7 +276,6 @@ form div.valasz_emailben, .valasz_telefonon {
   .fa:hover {
     background-color: rgba(240,230,223,1);
     outline: 1px solid rgb(112, 40, 9);
-    outline-style: round;
   }
 
   div.footer-social-media-elem {
