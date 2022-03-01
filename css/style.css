@@ -77,6 +77,18 @@ div.fejlec {
     margin-left: auto;
 }
 
+div.fejlec-kepek {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.webdev-kep {
+    max-width: 40%;
+}
+
 /* kezdőlap gombok*/
 
 .flex-gombok {
@@ -327,6 +339,14 @@ form div.valasz_emailben, .valasz_telefonon {
         border-radius: 5px;
     }
 
+    .webdev {
+        border-radius: 5px 0 0 5px;
+    }
+
+    .IT-profilkep {
+        border-radius: 0 5px 5px 0;
+    }
+
     /* Főoldal gombok */
     .flex-gombok div a {
         font-size: 1.2rem;
@@ -411,7 +431,3 @@ form div.valasz_emailben, .valasz_telefonon {
 
 }
 
-
-@media  screen and (min-width: 1200px) {
-    
-}
