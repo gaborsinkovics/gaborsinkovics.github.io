@@ -1,37 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sinkovics Gábor weboldala</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <header class="flex-tarolo">
-        <div class="fejlec">
-            <h1>Köszöntelek a weboldalamon</h1>
-            <img class="profilkep" src="./images/sinkovics_gabor.jpg" alt="Sinkovics_Gábor_profilképe">
-        </div>
-    </header>
-    <main class="flex-tarolo">
-        <section id="rolam">
-            <h2>Rólam</h2>
-            <p>
-                Zenész szülők gyermekeként korán kezdtem hangszeres tanulmányaimat, több mint 20 éve aktívan zenélek. 
-                Miután lediplomáztam sikerült elhelyezkednem szimfonikus
-                zenekarban, ahol azóta is dolgozom. Jelenleg a zene mellett sok
-                időt szentelek webfejlesztői tanulmányokra. Célom, hogy ebben a
-                szakmában is olyan hozzáértésre és tapasztalatra tegyek szert, mint az
-                előbbiben, hiszen hosszútávon ebben látok perspektívát.
-            </p>
-        </section>
-    </main>
-    <footer class="flex-tarolo">
-        <nav class="flex-gombok">
-            <div><a href="./webfejleszto.html">Webfejlesző oldalam</a></div>
-            <div><a href="./bracsamuvesz.html">Brácsaművész oldalam</a></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sinkovics Gábor webfejlesztő</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="container">
+        <div class="header-logo">Sinkovics Gábor</div>
+        <nav class="header-navigation">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a href="#portfolio">Projektek</a>
+            </li>
+            <li class="menu-item"><a href="#about">Rólam</a></li>
+            <li class="menu-item"><a href="#contact">Kapcsolat</a></li>
+          </ul>
         </nav>
-    </footer>
-</body>
+      </header>
+      <main>
+        <div class="wrapper_inner">
+          <section class="container section-occupation">
+            <h1>Pályakezdő webfejlesztő</h1>
+            <div class="solo-link-button"><a href="#nyelvek">beszélt nyelvek</a></div>
+          </section>
+          <section class="container section-skills" id="nyelvek">
+            <h2>Jelenleg ezekkel a nyelvekkel foglalkozom</h2>
+            <div class="skills-logo-container">
+              <div class="skills-logo-element logo-html"></div>
+              <div class="skills-logo-element logo-python"></div>
+              <div class="skills-logo-element logo-css"></div>
+            </div>
+            <div class="solo-link-button"><a href="#portfolio">Projektek</a></div>
+          </section>
+          <section class="container section-portfolio" id="portfolio">
+            <h2>Projektek</h2>
+            <ul class="portfolio-list">
+              <li class="portfolio-list-item"><div>1. projekt</div></li>
+              <li class="portfolio-list-item"><div>2. projekt</div></li>
+              <li class="portfolio-list-item"><div>3. projekt</div></li>
+              <li class="portfolio-list-item"><div>4. projekt</div></li>
+              <li class="portfolio-list-item"><div>5. projekt</div></li>
+              <li class="portfolio-list-item"><div>6. projekt</div></li>
+            </ul>
+          </section>
+          <section class="container section-about" id="about">
+            <h2>Rólam</h2>
+            <img
+              class="profilkep"
+              src="./images/sinkovics_gabor.jpg"
+              alt="Sinkovics Gábor profilképe"
+            />
+            <p>
+              Zenész szülők gyermekeként korán kezdtem hangszeres
+              tanulmányaimat, több mint 20 éve aktívan zenélek. Miután
+              lediplomáztam sikerült elhelyezkednem szimfonikus zenekarban, ahol
+              azóta is dolgozom. Jelenleg a zene mellett sok időt szentelek
+              webfejlesztői tanulmányokra. Célom, hogy ebben a szakmában is
+              olyan hozzáértésre és tapasztalatra tegyek szert, mint az
+              előbbiben, hiszen hosszútávon ebben látok perspektívát.
+            </p>
+          </section>
+          <section class="container section-contact" id="contact">
+            <h2>Kapcsolat</h2>
+            <form method="post" action="https://formspree.io/f/xwkyvlpj">
+              <fieldset class="fields">
+                <div>
+                  <label for="vezeteknev">Vezetéknév: </label>
+                  <input
+                    type="text"
+                    id="vezeteknev"
+                    name="vezeteknev"
+                    placeholder="Kovács"
+                    required
+                  />
+                  <label for="keresztnev">Keresztnév: </label>
+                  <input
+                    type="text"
+                    id="keresztnev"
+                    name="keresztnev"
+                    placeholder="Béla"
+                    required
+                  />
+                  <label for="telefonszam">Telefonszám: </label>
+                  <input
+                    type="tel"
+                    id="telefonszam"
+                    name="telefonszam"
+                    pattern="[0-9]{4}/[0-9]{3}-[0-9]{4}"
+                    placeholder="0670/504-0521"
+                    required
+                  />
+                  <label for="email">E-mail cím: </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="kovacs.bela@gmail.com"
+                    required
+                  />
+                  <textarea
+                    name="uzenet"
+                    id="uzenet"
+                    cols="40"
+                    rows="10"
+                    placeholder="Ide gépeld az üzenetet..."
+                  ></textarea>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="valasz_emailben"
+                    class="d-inline"
+                    name="valasz"
+                    value="emailben"
+                  />
+                  <label for="valasz_emailben" class="d-inline"
+                    >A választ e-mailben kérem</label
+                  >
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="valasz_telefonon"
+                    class="d-inline"
+                    name="valasz"
+                    value="telefonon"
+                  />
+                  <label for="valasz_telefonon" class="d-inline"
+                    >A választ telefonon kérem</label
+                  >
+                </div>
+                <input class="urlap-gomb" type="submit" />
+              </fieldset>
+            </form>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <p>Copyright &copy; Sinkovics Gábor 2022</p>
+      </footer>
+    </div>
+  </body>
 </html>

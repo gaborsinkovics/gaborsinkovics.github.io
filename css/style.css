@@ -1,417 +1,348 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border-radius: 5px;
-}
-
-html {
-    background-color: #c0e1fa;
-    color: #403037;
-    padding-bottom: 20px;
-}
-
-main {
-    padding: 4px;
-}
-
-.d_inline {
-    display: inline;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    box-shadow: 5px 5px 5px #403037;
-    border-radius: 0;
-}
-
-h1, h2 {
-    margin-top: 3vh;
-    margin-bottom: 2vh;
-}
-
-h3 {
-    margin-top: 2vh;
-    margin-bottom: 4vh;
-}
-
-a {
+    box-sizing: border-box;
     text-decoration: none;
-    color: inherit;
-}
-
-a:hover {
-    color: rgb(112, 40, 9);
-}
-
-.behuzas {
-    margin-left: 2vw;
-}
-
-
-p {
-    margin: 2vh 2vw;
-    text-align: justify;
-}
-
-li {
-    list-style-type: none;
-}
-
-.flex-tarolo {
-    width: 100%;
+  }
+  
+  img {
+    max-width: 60%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Fejléc */
-
-
-div.fejlec {
-    text-align: center;
-    max-width: 600px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-/* kezdőlap gombok*/
-
-.flex-gombok {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-}
-
-.flex-gombok div {
-    margin: 2vh 2vw;
-}
-
-.flex-gombok div a {
-    background-color: rgba(240,230,223,0.7);
-    box-shadow: 5px 5px 5px #403037;
-    padding: 1vw;
-}
-
-.flex-gombok div a:hover {
-    background-color: rgba(240,230,223,1);
-    box-shadow: none;
-    outline: 1px solid rgb(112, 40, 9);
-}
-
-/* Menü */
-
-header nav {
-    align-self: center;
-}
-
-.menu-tarolo {
-    width: 100%;
-    height: auto;
-    margin-top: 2vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(128, 123, 140);
-    padding: 0.8%;
-    box-shadow: 5px 5px 5px #403037;
-    border-radius: 0;
-}
-
-.menu-elem {
-    width: auto;
-    line-height: 1.6rem;
-    color: #c0e1fa;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: serif;
-}
-
-/* életrajz*/
-
-.grid-tarolo-szemelyes_adatok,
-    .grid-tarolo-tanulmanyok {
-        display: grid;
-        grid-template-columns: 95px 1.5fr;
-        line-height: 1.5rem;
-        gap: 10px;
-        align-items: center;
-        justify-content: center;
-    }
-
-
-    .grid-tarolo-tapasztalat,
-    .grid-tarolo-versenyeredmenyek {
-        display: grid;
-        grid-template-columns: 95px 1.5fr 1fr;
-        line-height: 1.5rem;
-        gap: 10px;
-        align-items: center;
-        justify-content: center;
-    }
-
-.grid-tarolo div {
-    text-align: center;
-} 
-
-
-/* zenék*/
-
-#multimedia h4 {
-    margin: 2vh 3vw;
-}
-
-.multimedia li {
-    margin-bottom: 2vh;
-}
-
-#multimedia h3 {
-    text-align: center;
-    margin-top: 5vh;
-}
-
-.grid-media-tarolo {
-    display: grid;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 5vw;
-    justify-items: center;
-}
-
-
-.media-elem {
-    background-image: url("../images/bracsa.png");
-    background-repeat: no-repeat;
-    color: white;
-    min-width: 310px;
-    box-shadow: 5px 5px 5px #403037;
-    padding-top: 120px;
-    border: 5px solid #f0f3f4;
-}
-
-audio {
-    background-color: #f0f3f4;
-    min-width: 310px;
-    position: relative;
-    top: 5px;
-    border-radius: 0;
-}
-
-.flex-media-tarolo {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-}
-
-
-/* kapcsolat űrlap*/
-
-form * {
+  }
+  
+  .profilkep {
+    border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-form fieldset {
-    min-width: auto;
-}
-
-form fieldset, input, textarea {
-    border: 1px solid #403037;
-    margin-bottom: 1.5vw;
-    line-height: 1.2rem;
+  }
+  
+  h1,
+  h2 {
+    text-align: center;
+    margin: 2vh auto;
+  }
+  
+  d-inline {
+    display: inline;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  a {
+    color: inherit;
+  }
+  
+  div.solo-link-button {
+    background-color: rgba(32, 31, 31, 0.8);
+    color: white;
     padding: 1%;
-}
-
-
-form div {
-    padding: 1vw;
-}
-
-
-form div:first-of-type input, textarea{
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+  
+  div.solo-link-button:hover {
+    background-color: white;
+    color: black;
+    outline: 1px solid black;
+    box-shadow: none;
+  }
+  
+  section {
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  
+  .container {
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+  }
+  
+  /* görgetés */
+  
+  body,
+  footer {
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  main {
+    overflow-y: scroll;
+    overflow-x: hidden;
     width: 100%;
-}
+    background-color: lightskyblue;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Fejléc */
+  
+  header {
+    background-color: rgba(32, 31, 31, 0.5);
+    color: white;
+    width: 100%;
+    height: auto;
+    border: 1px solid white;
+  }
+  
+  header:hover {
+    background-color: rgba(32, 31, 31, 0.8);
+  }
+  
+  .header-logo {
+    width: max-content;
+    padding: 1%;
+    margin: auto;
+    font-family: "Lora", serif;
+    background-color: #D6ED17FF;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: rgba(32, 31, 31, 0.8);
+  }
+  
+  .menu-list {
+    width: max-content;
+    height: 100%;
+    margin: 5% auto 0;
+    padding: 1%;
+  }
+  
+  /* Mesterségem címere */
+  
+  .section-occupation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (min-width: 576px) {
+  }
+  
+  @media (min-width: 768px) {
+    header {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Menü */
+  
+    .header-logo {
+      min-width: 190px;
+      margin: auto 0;
+    }
+  
+    .menu-list {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      margin-top: 0;
+    }
+  
+    .menu-item {
+      margin: 0 5%;
+      min-width: fit-content;
+    }
+  
+    .menu-item:hover {
+      background-color: whitesmoke;
+      outline: 1.5rem solid whitesmoke;
+      color: black;
+    }
+  
+    /* Portfolio */
+  
+    .portfolio-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30%;
+    }
+  
+    /* Rólam */
+  
+    img {
+      max-width: 40%;
+      height: auto;
+      margin-bottom: 4vh;
+    }
 
-.urlap-gomb {
+    .section-about p {
+        margin-bottom: 4vh;
+    }
+  
+  @media screen and (min-width: 992px) {
+    .container {
+      width: 100vw;
+    }
+  
+    .portfolio-list {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  
+    /* Rólam */
+  
+    img {
+      max-width: 30%;
+      height: auto;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+  }
+  
+  
+  /* skills */
+  
+  .section-skills {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #B1624EFF;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .skills-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    width: 100vw;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+  }
+  
+  .skills-logo-element {
+    width: 180px;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  
+  div.logo-html {
+    background-image: url("../images/HTML5_logo.png");
+  }
+  
+  div.logo-css {
+    background-image: url("../images/CSS_logo.png");
+  }
+  
+  div.logo-python {
+    background-image: url("../images/Python_logo.png");
+  }
+  
+  /* portfolio */
+  
+  .section-portfolio {
+    background-image: url("../images/webdev.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .section-portfolio h2 {
+    background-color: whitesmoke;
+    opacity: 0.9;
+    padding: 2%;
+  }
+  
+  .portfolio-list {
+    list-style-type: none;
+  }
+  
+  .portfolio-list-item {
+    background-color: white;
+    border: 1px solid black;
+    width: 100%;
+  }
+  
+  /* kapcsolat űrlap */
+  
+  .section-contact {
+    background-color: #0063B2FF;
+    color: white;
+  }
+  
+  form * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  form fieldset,
+  input,
+  textarea {
+    border: 1px solid whitesmoke;
+    margin-bottom: 1.5vw;
+    line-height: 1.6rem;
+    padding: 1%;
+  }
+  
+  form div {
+    padding: 5%;
+    text-align: center;
+  }
+  
+  form div:first-of-type input,
+  textarea {
+    width: 100%;
+    margin: 2vh auto 4vh;
+  }
+  
+  .urlap-gomb {
+    display: block;
     margin: 1vh auto 4vh;
     padding: 1vw;
-    background-color: rgba(240,230,223,1);
-    box-shadow: 5px 5px 5px #403037;
+    background-color: rgba(240, 230, 223, 1);
+    box-shadow: 5px 5px 5px black;
     border: 0;
     font-size: 1.5rem;
     min-height: 50px;
-}
-
-.urlap-gomb:hover {
+    border-radius: 10px;
+  }
+  
+  .urlap-gomb:hover {
     cursor: pointer;
-    color: rgb(112, 40, 9);
+    background-color: #0063B2FF;
     box-shadow: none;
-    outline: 1px solid rgb(112, 40, 9);
-}
-
-form div.valasz_emailben, .valasz_telefonon {
+    outline: 1px solid white;
+    color: white;
+  }
+  
+  form div.valasz_emailben,
+  .valasz_telefonon {
     line-height: normal;
     padding-top: 0;
-}
-
-/* Footer social media icons*/
-
-.fa {
-    padding-top: 18px;
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
-    text-decoration: none;
-    line-height: 30px;
   }
-
-  .fa:hover {
-    background-color: rgba(240,230,223,1);
-    outline: 1px solid rgb(112, 40, 9);
+  
+  /* Lábléc */
+  
+  footer {
+    height: 20%;
+    background-color: rgba(32, 31, 31, 0.8);
+    color: whitesmoke;
   }
-
-  div.footer-social-media-elem {
-      text-align: center;
+  
+  footer p {
+    width: fit-content;
+    margin: 0 auto;
   }
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-linkedin {
-    background-color: rgb(128, 123, 140);
-    color: white;
-}
-
-.fa-github {
-    background-color: lightseagreen;
-    color: white;
-}
-
-.footer-social-media-tarolo {
-    margin-left: auto;
-    margin-right: auto;
-    width: 280px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
-/* Töréspontok */
-
-@media  screen and (min-width: 576px) {   
-    .profilkep {
-        max-width: 50%;
-        max-height: 50%;
-    } 
-}
-
-
-@media  screen and (min-width: 768px) {
-
-    main {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    img {
-        border-radius: 5px;
-    }
-
-    /* Főoldal gombok */
-    .flex-gombok div a {
-        font-size: 1.2rem;
-    }
-
-    /* Menü */
-    .menu-tarolo {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.5vw;
-        text-align: center;
-        justify-items: center;
-        border-radius: 5px;
-    }
-
-    .menu-elem {
-        min-width: min-content;
-    }
-
-    .menu-elem-versenyeredmenyek {
-        grid-column: span 3;
-    }
-
-    /* webfejleszto menu*/
-
-    .IT-menu-elem-kapcsolat {
-        grid-column-start: 3;
-    }
-
-    .IT-menu-elem-szemelyes_adatok {
-        grid-row: span 2;
-    }
-
-    /* Életrajz */
-    .grid-tarolo div {
-        text-align: left;
-    } 
-
-    /* Zenék */
-
-    .grid-media-tarolo {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .grid-media-elem {
-        width: auto;
-    }
-
-    .flex-media-tarolo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }    
-}
-
-
-
-@media  screen and (min-width: 992px) {
-   
-    /* Menü */
-    .menu-tarolo {
-        grid-template-columns: repeat(7, auto);
-    }
-
-    .menu-elem {
-        margin: auto 1vw;
-    }
-
-    .menu-elem-versenyeredmenyek {
-        grid-column: auto;
-    }
-
-    /*IT Menü*/
-
-    .IT-menu-elem-kapcsolat {
-        grid-column-start: auto;
-    }
-
-    .IT-menu-elem-szemelyes_adatok {
-        grid-row: auto;
-    }
-
-}
-
-
-@media  screen and (min-width: 1200px) {
-    
-}
+  
