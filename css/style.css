@@ -229,6 +229,7 @@
     width: 100%;
     margin: 2vh auto 4vh;
     font-size: 2rem;
+    line-height: 2rem;
   }
   
   .urlap-gomb {
@@ -329,7 +330,7 @@
     /* Kapcsolat */
 
     form {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
   
