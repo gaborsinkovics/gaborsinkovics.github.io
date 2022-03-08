@@ -43,15 +43,18 @@
             <div class="solo-link-button"><a href="#portfolio">Projektek</a></div>
           </section>
           <section class="container section-portfolio" id="portfolio">
-            <h2>Projektek</h2>
-            <ul class="portfolio-list">
-              <li class="portfolio-list-item"><div>1. projekt</div></li>
-              <li class="portfolio-list-item"><div>2. projekt</div></li>
-              <li class="portfolio-list-item"><div>3. projekt</div></li>
-              <li class="portfolio-list-item"><div>4. projekt</div></li>
-              <li class="portfolio-list-item"><div>5. projekt</div></li>
-              <li class="portfolio-list-item"><div>6. projekt</div></li>
-            </ul>
+            <div class="portfolio-background"></div>
+            <div class="portfolio-container">
+              <h2>Projektek</h2>
+              <ul class="portfolio-list">
+                <li class="portfolio-list-item"><div>1. projekt</div></li>
+                <li class="portfolio-list-item"><div>2. projekt</div></li>
+                <li class="portfolio-list-item"><div>3. projekt</div></li>
+                <li class="portfolio-list-item"><div>4. projekt</div></li>
+                <li class="portfolio-list-item"><div>5. projekt</div></li>
+                <li class="portfolio-list-item"><div>6. projekt</div></li>
+              </ul>
+            </div>
           </section>
           <section class="container section-about" id="about">
             <h2>Rólam</h2>
@@ -116,27 +119,27 @@
                     placeholder="Ide gépeld az üzenetet..."
                   ></textarea>
                 </div>
-                <div>
+                <div class="valasz-container">
                   <input
                     type="radio"
                     id="valasz_emailben"
-                    class="d-inline"
+                    class="valasz d-inline"
                     name="valasz"
                     value="emailben"
                   />
-                  <label for="valasz_emailben" class="d-inline"
+                  <label for="valasz_emailben" class="valasz d-inline"
                     >A választ e-mailben kérem</label
                   >
                 </div>
-                <div>
+                <div class="valasz-container">
                   <input
                     type="radio"
                     id="valasz_telefonon"
-                    class="d-inline"
+                    class="valasz d-inline"
                     name="valasz"
                     value="telefonon"
                   />
-                  <label for="valasz_telefonon" class="d-inline"
+                  <label for="valasz_telefonon" class="valasz d-inline"
                     >A választ telefonon kérem</label
                   >
                 </div>

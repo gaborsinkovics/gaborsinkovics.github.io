@@ -8,6 +8,7 @@
   img {
     max-width: 60%;
     height: auto;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.8);
   }
   
   .profilkep {
@@ -46,10 +47,11 @@
   }
   
   div.solo-link-button:hover {
-    background-color: white;
+    background-color: rgba(245, 245, 245, 0.7);
     color: black;
     outline: 1px solid black;
     box-shadow: none;
+    transition-duration: 0.2s;
   }
   
   section {
@@ -74,8 +76,9 @@
   main {
     overflow-y: scroll;
     overflow-x: hidden;
+    scroll-behavior: smooth;
     width: 100%;
-    background-color: lightskyblue;
+    background-color: black;
   }
   
   .wrapper {
@@ -97,6 +100,7 @@
   
   header:hover {
     background-color: rgba(32, 31, 31, 0.8);
+    transition-duration: 0.2s;
   }
   
   .header-logo {
@@ -106,7 +110,7 @@
     font-family: "Lora", serif;
     background-color: #D6ED17FF;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 0 5px;
     color: rgba(32, 31, 31, 0.8);
   }
   
@@ -126,6 +130,8 @@
     align-items: center;
     width: 100%;
     height: auto;
+    background: rgb(135,206,250);
+    background: linear-gradient(180deg, rgba(135,206,250,1) 0%, rgba(177,98,78,1) 92%);
   }
 
   /* skills */
@@ -137,7 +143,8 @@
     height: auto;
     justify-content: center;
     align-items: center;
-    background-color: #B1624EFF;
+    background: rgb(177,98,78);
+    background: linear-gradient(180deg, rgba(177,98,78,1) 0%, rgba(0,0,0,1) 100%); 
     margin: 0;
     padding: 0;
   }
@@ -155,6 +162,7 @@
   .skills-logo-element {
     width: 180px;
     height: 180px;
+    margin: 5vh auto;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -177,14 +185,42 @@
   /* portfolio */
   
   .section-portfolio {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+
+  .portfolio-background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-image: url("../images/webdev.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    z-index: 0;
+  }
+
+  .portfolio-container {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95vw;
+    max-height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
   }
   
   .section-portfolio h2 {
-    background-color: whitesmoke;
-    opacity: 0.9;
+    background-color: rgba(245, 245, 245, 0.7);
     padding: 2%;
   }
   
@@ -193,10 +229,22 @@
   }
   
   .portfolio-list-item {
-    background-color: white;
+    background-color: rgba(245, 245, 245, 0.7);
     border: 1px solid black;
     width: 100%;
   }
+
+  /* Rólam */
+
+  .section-about {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,99,178,1) 56%);
+  }
+
+  .section-about h2 {
+    color: whitesmoke;
+  }
+  
   
   /* kapcsolat űrlap */
   
@@ -214,6 +262,7 @@
   input,
   textarea {
     border: 1px solid whitesmoke;
+    border-radius: 0 10px;
     margin-bottom: 1.5vw;
     line-height: 1.6rem;
     padding: 1%;
@@ -230,6 +279,12 @@
     margin: 2vh auto 4vh;
     font-size: 2rem;
     line-height: 2rem;
+    background-color: rgba(256, 256, 256, 0.6);
+  }
+
+  form div:first-of-type input:hover,
+  textarea:hover {
+    border-radius: 10px;
   }
   
   .urlap-gomb {
@@ -241,7 +296,7 @@
     border: 0;
     font-size: 1.5rem;
     min-height: 50px;
-    border-radius: 10px;
+    border-radius: 0 10px;
   }
   
   .urlap-gomb:hover {
@@ -250,12 +305,22 @@
     box-shadow: none;
     outline: 1px solid white;
     color: white;
+    transition-duration: 0.2s;
   }
   
   form div.valasz_emailben,
   .valasz_telefonon {
     line-height: normal;
     padding-top: 0;
+  }
+
+  .valasz-container {
+    box-sizing: content-box;
+  }
+
+  .valasz {
+    vertical-align: middle;
+    margin-bottom: 0;
   }
   
   /* Lábléc */
@@ -305,6 +370,7 @@
       background-color: whitesmoke;
       outline: 1.5rem solid whitesmoke;
       color: black;
+      transition-duration: 0.2s;
     }
   
     /* Portfolio */
